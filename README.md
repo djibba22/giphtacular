@@ -1,5 +1,6 @@
 #REACT FUN with the GIPHY API
-[logo]: https://giphy.com/static/img/labs.gif "Gighy.com"
+![alt text](https://giphy.com/static/img/labs.gif "Logo Title Text 1")
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

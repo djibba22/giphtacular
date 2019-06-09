@@ -9,18 +9,18 @@ class App extends React.Component  {
     super(props);
     this.state = {
       value: '',
-      giphButtons:[]
+      giphButtons:["Javascript","REACT","MongoDB"]
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
   handleChange(event) {
     this.setState({value: event.target.value});
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
     //Push the new value from the form into our array 
     this.setState({
@@ -28,14 +28,19 @@ class App extends React.Component  {
     });
     console.log(`Current Array ${this.state.giphButtons}`);
   }
+
+  // click function that makes a call to the api
+  handleClick(props){
+    alert("Looking for "+ props.text+" giphs.");
+  }
   render(){
     return (
       <div className="App">
         <header className="App-header">
           <Form 
-          change={this.handleChange}
-          submit={this.handleSubmit}
-          value={this.state.value}
+            change={this.handleChange}
+            submit={this.handleSubmit}
+            value={this.state.value}
           />
         </header>
         <div className="container">
@@ -43,12 +48,13 @@ class App extends React.Component  {
             <div className="col-md-12 buttons">
               {/* Map over buttons array and display the getters */}
               {
-                this.state.giphButtons.map(function (val,i) {
+                this.state.giphButtons.map((val,i) => {
                   // eslint-disable-next-line no-unused-expressions
                   return(
                   <Button 
-                  text={val}
-                  key={i} 
+                    text={val}
+                    key={i}
+                    clickHandler={this.handleClick.bind(this)}
                   />
                   )
                 })

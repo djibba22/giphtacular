@@ -1,9 +1,13 @@
 import React from "react";
 
-class Button extends React.Component {
-    render() {
-      return <button className="btn btn-danger">Hello, {this.props.name}</button>;
-    }
-  }
+function Button (props) {
+    return(
+     <button 
+     className="btn btn-danger"
+     onClick={() => props.clickHandler(props)}>
+     {props.text}
+     </button>
+    );
+}
 
 export default Button;

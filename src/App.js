@@ -22,6 +22,11 @@ class App extends React.Component  {
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
+    //Push the new value from the form into our array 
+    this.setState({
+      giphButtons: [ ...this.state.giphButtons, this.state.value],
+    });
+    console.log(`Current Array ${this.state.giphButtons}`);
   }
   render(){
     return (
@@ -33,15 +38,26 @@ class App extends React.Component  {
           value={this.state.value}
           />
         </header>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 buttons">
-              <h1>Buttons Across Here</h1>
-              <Button/>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 buttons">
+              {/* Map over buttons array and display the getters */}
+              {
+                this.state.giphButtons.map(function (val,i) {
+                  // eslint-disable-next-line no-unused-expressions
+                  return(
+                  <Button 
+                  text={val}
+                  key={i} 
+                  />
+                  )
+                })
+              }
+              
               <hr/>
             </div>
-            <div class="row">
-            <div class="col-md-12 gifs">
+            <div className="row">
+            <div className="col-md-12 gifs">
             <h1>Giphs in Here</h1>
               <hr/>
             </div>

@@ -5,12 +5,16 @@
 .App-header {
   background-color: #282c34;
   /* min-height: 100vh; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+  position: absolute;
+  top:100px;
+  width:100%;
+  height:75px;
 }
 
 .App-link {
@@ -26,8 +30,13 @@
 }
 
 .main_title{
+  height:250px;
+  margin-bottom:0;
+  color:white;
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size:4rem;
+  background-image: url("https://media2.giphy.com/media/cGbGMQTm4dBzq/giphy.gif?cid=790b76115cfda9194738454c6330e5ff&rid=giphy.gif");
+  background:cover;
 }
 
 @keyframes App-logo-spin {

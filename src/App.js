@@ -32,7 +32,7 @@ class App extends React.Component  {
 
   // click function that makes a call to the api
   handleClick(props){
-    fetch("http://api.giphy.com/v1/gifs/search?q=" + props.text + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10")
+    fetch("http://api.giphy.com/v1/gifs/search?q=" + props.text + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=12")
       .then(response => response.json())
       .then(data => this.setState({ data }));
     console.log(this.state.data);
@@ -41,6 +41,7 @@ class App extends React.Component  {
   render(){
     return (
       <div className="App">
+        <h1 className="main_title">GIPHTACULAR</h1>
         <header className="App-header">
           <Form 
             change={this.handleChange}

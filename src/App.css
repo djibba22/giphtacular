@@ -20,10 +20,14 @@
   height: 200px;
   width:300px;
   margin:15px;
- 
   border-radius: 4px;
   overflow: auto;
   float:left;
+}
+
+.main_title{
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size:4rem;
 }
 
 @keyframes App-logo-spin {

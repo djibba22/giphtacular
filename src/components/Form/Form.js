@@ -7,7 +7,7 @@ function Form (props) {
           <label>
             <input className="main-input" type="text" value={props.value} onChange={props.change} />
           </label>
-          <button className="btn btn-default" type="submit" value="Submit">ClickToNerd</button>
+          <button className="btn btn-info" type="submit" value="Submit">ClickToNerd</button>
         </form>
       );
   

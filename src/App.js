@@ -1,10 +1,12 @@
+//Import all the goods
 import React from "react";
-
 import './App.css';
 import Form from './components/Form/Form';
 import Button from './components/Button/Button';
-
+//Define the function to be returned
 class App extends React.Component {
+  /**  Constructor takes in the parents props or any params
+      @params props **/
   constructor(props) {
     super(props);
     this.state = {
@@ -17,10 +19,13 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 
   }
+   /**  Input watching function that updates the value from the form
+      @params event **/
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
-
+   /**  Upon submittion from the form add to the array
+      @params event **/
   handleSubmit(event) {
     event.preventDefault();
     //Push the new value from the form into our array 

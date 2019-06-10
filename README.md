@@ -1,4 +1,6 @@
 # REACT FUN with the GIPHY API
+This is the incredibly fun application that returns sets of giphs that you can play if you want to just by clicking on the giph itself. Don't see the giph you want? Simply add the theme into the form and presto! You have a new button to ask for a whole new set of giphs. This app was made for hours of family fun, invite the neighbors over, get your popcorn ready and start the fire. Giphtacular is here to solve all your problems and create endless amounts of money. Succes is but one click away. :stuck_out_tongue_winking_eye:
+
 Head over to [https://developers.giphy.com/](https://developers.giphy.com/) to view the docs.
 
 ![alt text](https://giphy.com/static/img/labs.gif "giph labs")

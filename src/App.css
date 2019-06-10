@@ -16,6 +16,15 @@
 .App-link {
   color: #61dafb;
 }
+.giph_div{
+  height: 200px;
+  width:300px;
+  margin:15px;
+ 
+  border-radius: 4px;
+  overflow: auto;
+  float:left;
+}
 
 @keyframes App-logo-spin {
   from {

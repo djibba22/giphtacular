@@ -1,4 +1,6 @@
 # REACT FUN with the GIPHY API
+Head over to [https://developers.giphy.com/](https://developers.giphy.com/) to view the docs.
+
 ![alt text](https://giphy.com/static/img/labs.gif "giph labs")
 
 # Tech Stack
